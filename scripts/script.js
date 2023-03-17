@@ -14,7 +14,7 @@ function lunchCheckerHandler($scope){
             return;
         }
 
-        const ensureFoods = getEnsureFoods($scope.foods);
+        const ensureFoods = getEnsureFoods(foods);
         if(ensureFoods.length <= 3){
             enoughCheckLunchHandler("message");
         }
