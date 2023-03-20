@@ -17,7 +17,7 @@
         }
     }
 
-    ToBuyController.$inject = ["DbService"]
+    AlreadyBoughtController.$inject = ["DbService"]
     function AlreadyBoughtController(DbService){
         this.isEmpty = () => DbService.boughtTable.count() <= 0 ? true : false;
         this.getData = () => DbService.boughtTable.getAllData();
